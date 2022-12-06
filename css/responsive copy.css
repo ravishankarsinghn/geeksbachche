@@ -1,0 +1,307 @@
+/* 1800px BIG DESKTOP */
+@media only screen and (min-width: 1800px) {
+  /* CSS */
+  html {
+    font-size: 75%;
+  }
+}
+
+/* 1200px TAB LAND */
+@media only screen and (max-width: 1200px) {
+  /* CSS */
+  html {
+    font-size: 56.25%;
+  }
+
+  .col-1-of-5 {
+    width: calc(100% / 3);
+  }
+
+  .feature-box__row {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 64rem;
+  }
+
+  .feature-box__desc {
+    max-width: 90%;
+  }
+}
+
+/* 900px TAB PORT */
+@media only screen and (max-width: 900px) {
+  /* CSS */
+  html {
+    font-size: 50%;
+  }
+
+  .section {
+    padding: 10rem 2.5rem;
+  }
+
+  .section__title {
+    margin-bottom: 6rem;
+  }
+
+  .section__main {
+    flex-direction: column;
+  }
+
+  .col-1-of-2 {
+    width: 100%;
+  }
+
+  .section__main .col-1-of-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .col-1-of-2:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .section__main h3 {
+    text-align: center;
+    display: block;
+  }
+
+  .section__main img {
+    height: 40rem;
+    width: 80%;
+  }
+
+  .section__contact--content {
+    flex-direction: column;
+  }
+  .section__content {
+    padding: 0 2.5rem;
+  }
+
+  .section__call-to-action {
+    padding: 3rem 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .col-1-of-5 {
+    width: 45%;
+  }
+
+  .feature-box__row {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 90rem;
+  }
+
+  .feature-box__desc {
+    max-width: 100%;
+  }
+
+  /* team section */
+  .team__section .section__title {
+    margin-bottom: 8rem;
+  }
+
+  .team__section--member {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 68rem;
+  }
+
+  .team__member--card {
+    width: 45%;
+  }
+
+  .section__form {
+    max-width: 65rem;
+    padding: 3rem 4rem;
+  }
+}
+
+/* 600px PHONE */
+@media only screen and (max-width: 600px) {
+  /* CSS */
+  .header {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav__item:not(:last-child) {
+    display: none;
+  }
+
+  .nav__item {
+    margin-left: 0;
+  }
+
+  .section {
+    padding: 6rem 1.5rem;
+  }
+
+  .section__title,
+  .section__main .section__title {
+    margin-bottom: 3rem;
+  }
+
+  .section__main .section__header {
+    margin-bottom: 2rem;
+  }
+
+  .section__main img {
+    height: 30rem;
+    width: 100%;
+  }
+
+  .description {
+    margin-top: 3rem;
+  }
+
+  /* about-us section */
+  .content-item {
+    /* text-align: center; */
+    text-indent: 1.5rem;
+  }
+
+  .content-item::before,
+  .content-item::after {
+    font-size: 5rem;
+  }
+
+  .content-item::before {
+    top: -0.3rem;
+    left: -3rem;
+  }
+
+  /* team section */
+  .team__section .section__title {
+    margin-bottom: 8rem;
+  }
+
+  .team__section--member {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 120rem;
+  }
+
+  .team__member--card {
+    width: 80%;
+  }
+
+  .section__book-free-trial {
+    padding: 3rem 2rem;
+  }
+
+  .section__book-free-trial .section__title {
+    margin-bottom: 3rem;
+  }
+
+  .section__book-free-trial .section__header {
+    font-size: 2.5rem;
+  }
+
+  .section__book-free-trial .btn {
+    padding: 1rem 2.5rem;
+  }
+
+  .section__call-to-action {
+    padding: 3rem 2rem;
+  }
+
+  .cta-paragraph {
+    font-size: 2rem;
+  }
+
+  .col-1-of-5 {
+    width: 100%;
+  }
+
+  .feature-box__row {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 130rem;
+  }
+
+  .feature-box {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .feature-box__icon {
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .feature-box__desc {
+    max-width: 80%;
+  }
+
+  .testimonial {
+    width: 75%;
+  }
+
+  .testimonial::before {
+    font-size: 10rem;
+    top: -2rem;
+    left: -4rem;
+  }
+
+  .testimonial__author {
+    margin-left: 1.5rem;
+    column-gap: 1rem;
+  }
+
+  .testimonial__person-recognition {
+    font-size: 1rem;
+  }
+
+  .slider__btn {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2.5rem;
+    border: 1px solid var(--color-primary);
+  }
+
+  .slider__btn--left {
+    left: 2rem;
+    /* transform: translate(-50%, -50%); */
+  }
+
+  .slider__btn--right {
+    right: -2rem;
+    /* transform: translate(-50%, -50%); */
+  }
+
+  .dots {
+    bottom: 8.5%;
+  }
+
+  .footer {
+    padding: 5rem 1.5rem;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__item {
+    margin: 0;
+  }
+
+  .section__form {
+    max-width: 60rem;
+    padding: 2.5rem;
+    border-color: var(--color-primary);
+  }
+}

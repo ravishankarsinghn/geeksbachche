@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeeksBache</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form-style.css" />
+    <link rel="stylesheet" href="css/responsive copy.css" />
+
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header header-extra">
+      <nav class="nav">
+        <img
+          src="images/logo.jpg"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="http://geekbache.com" class="nav__link nav__link--btn"
+              >Home</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section__form">
+      <div class="section__title">
+        <h2 class="section__header">Sign Up!</h2>
+        <p>-: All fields are required :-</p>
+      </div>
+      <div class="form__container">
+        <form action="#" class="form" method="POST" autocomplete="off">
+          <div class="form__group">
+            <small>Error Message</small>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="First Name"
+              id="fname"
+            />
+            <i class="material-icons i_circle">check_circle</i>
+            <i class="material-icons i_error">error</i>
+            <label for="fname" class="form__label">First Name</label>
+          </div>
+          <div class="form__group">
+            <small>Error Message</small>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Last Name"
+              id="lname"
+            />
+            <i class="material-icons i_circle">check_circle</i>
+            <i class="material-icons i_error">error</i>
+
+            <label for="lname" class="form__label">Last Name</label>
+          </div>
+
+          <div class="form__group">
+            <small>Error Message</small>
+            <input
+              type="email"
+              class="form__input"
+              placeholder="E-mail address"
+              autocomplete="on"
+              id="email"
+            />
+            <i class="material-icons i_circle">check_circle</i>
+            <i class="material-icons i_error">error</i>
+
+            <label for="email" class="form__label">Email address</label>
+          </div>
+
+          <div class="form__group">
+            <small>Error Message</small>
+            <input
+              type="tel"
+              class="form__input"
+              placeholder="Enter 10 digit Phone number"
+              pattern="[0-9]{10}"
+              id="tel"
+            />
+            <i class="material-icons i_circle">check_circle</i>
+            <i class="material-icons i_error">error</i>
+
+            <label for="tel" class="form__label">Phone no.</label>
+          </div>
+
+          <div class="form__group">
+            <small>Error Message</small>
+            <input
+              type="password"
+              class="form__input"
+              placeholder="Password"
+              autocomplete="on"
+              id="pswd"
+            />
+            <i class="material-icons i_circle">check_circle</i>
+            <i class="material-icons i_error">error</i>
+
+            <label for="pswd" class="form__label">Password</label>
+          </div>
+          <div class="form__group">
+            <small>Error Message</small>
+            <input
+              type="password"
+              class="form__input"
+              placeholder="Confirm password"
+              id="confirm-pswd"
+              autocomplete="on"
+            />
+            <i class="material-icons i_circle">check_circle</i>
+            <i class="material-icons i_error">error</i>
+
+            <label for="confirm-pswd" class="form__label"
+              >Confirm Password</label
+            >
+          </div>
+
+          <div class="form__group margin-bottom-big">
+            <small></small>
+            <div class="flex" style="width: 100%">
+              <div class="form__radio-group">
+                <input
+                  type="radio"
+                  class="form__radio-input"
+                  id="male"
+                  name="gender"
+                />
+                <label for="male" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Male
+                </label>
+              </div>
+
+              <div class="form__radio-group">
+                <input
+                  type="radio"
+                  class="form__radio-input"
+                  id="female"
+                  name="gender"
+                />
+                <label for="female" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Female
+                </label>
+              </div>
+
+              <div class="form__radio-group">
+                <input
+                  type="radio"
+                  class="form__radio-input"
+                  id="others"
+                  name="gender"
+                />
+                <label for="others" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Others
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <input type="submit" value="Sign Up" class="form__submit-button" />
+          </div>
+          <!--
+          <div class="form__group flex flex-end">
+            <div class="form__other-link--container">
+              Already have an account?
+              <span
+                ><a href="sing-in.html" class="form__other-link--gradient"
+                  >Sign In</a
+                ></span
+              >
+            </div>
+          </div> -->
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img src="images/logo.jpg" alt="Logo" class="footer__logo" />
+
+      <p class="footer__copyright">
+        &copy; Copyright by <a href="#" class="footer__link">GeeksBache</a>. All
+        rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
